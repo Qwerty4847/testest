@@ -1,0 +1,62 @@
+body {
+font-size: 18px;
+font-family: sans-serif;
+font-style: italic;
+overflow-x: hidden;
+background-color: Cyan;
+}
+
+ti {
+font-size: 40px;
+font-weight: bold;
+}
+
+img {
+border: 1px dotted;
+width: 200px;
+height: 200px;
+}
+
+hide {
+color: Cyan;
+-moz-user-select: -moz-none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+<style>
+.scroll {
+height: 50px;
+overflow: hidden;
+position: relative;
+}
+
+.scroll h3 {
+font-size: 3em;
+color: navy;
+position: absolute;
+overflow: hidden;
+width: 100%;
+height: 100%;
+margin: 0;
+line-height: 50px;
+text-align: center;
+-moz-user-select: -moz-none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-moz-transform:translateX(75%);
+-webkit-transform:translateX(75%);
+transform:translateX(75%);
+-moz-animation: scroll 10s linear infinite;
+-webkit-animation: scroll 10s linear infinite;
+animation: scroll 10s linear infinite;
+}
+@-moz-keyframes scroll {0% {-moz-transform:translateX(100%);} 0% {-moz-transform:translateX(-100%);} }
+@-webkit-keyframes scroll {0% {-webkit-transform:translateX(100%);} 0% {-webkit-transform:translateX(-100%);} }
+@keyframes scroll {0% {-moz-transform:translateX(100%);-webkit-transform:translateX(100%);transform:translateX(100%);} 0% {-moz-transform:translateX(-100%);-webkit-transform:translateX(-100%);transform:translateX(-100%);} }
+
+</style>
